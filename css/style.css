@@ -1,61 +1,67 @@
+<link rel="stylesheet" type="text/css" href="reset.css">
 *, *:before, *:after {
   box-sizing: border-box;
 }
 body {
-  position:fixed;
+  position:relative;
   margin: 0 auto;
   background-color: #ffffff;
-  font-size: 10px;
+  font-size: 16px;
   display: block;
 }
 div {
   margin: 0 auto;
   width: 100%;
-  padding: 6px 0px;
+  padding: 10px 0px;
+  display: block;
 }
 article h1 {
   text-align: center;
+  font-size: 24px;
+  font-family: system-ui, sans-serif;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .container {
   margin: 0 auto;
-  width: 100%;
+  width: 375px;
   background-color: #d3d3d3;
   text-indent: 10px;
 }
+section div {
+  width: 100%;
+  min-height: 287px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
   .preview-baku {
-    width: 150px;
-    height: 87px;
     background-image: url(../images/baku.jpg);
-      background-size:100%;
     }
-    .preview-london {
-      width: 150px;
-      height: 87px;
-      background-image: url(../images/london.png);
-      background-size:100%;
+  .preview-london {
+    background-image: url(../images/london.png);
     }
-    .preview-madrid {
-      width: 150px;
-      height: 87px;
-      background-image: url(../images/madrid.jpg);
-      background-size:100%;
+  .preview-madrid {
+    background-image: url(../images/madrid.jpg);
     }
-    .preview-rome {
-      width: 150px;
-      height: 87px;
-      background-image: url(../images/rome.jpg);
-      background-size:100%;
+  .preview-rome {
+    background-image: url(../images/rome.jpg);
     }
 @media screen and (min-width: 575px){
    div {
     margin: 5px 0%;
     width: 100%;
+    display: inline-block;
+    float: left;
+    background-size:cover;
+    background-repeat: no-repeat;
   }
-}
-media screen and (min-width: 991px){
-   div {
-    margin: 5px 0%;
-    width: 100%;
-      float: left;
+  .container {
+    margin: 0 auto;
+    width: 768px;
+    background-color: #d3d3d3;
+    text-indent: 10px;
+    column-count: 2;
   }
 }
